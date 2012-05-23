@@ -13,7 +13,7 @@ def replace_tag(matchobj):
 @stringfilter
 def video(value):
    """Tag used to add video support to a markdown formatted string.
-      Best use is ``|safe|video|markdown:"safe"``, and the markdown
+      Best use is ``|safe|markdown:"safe"|video``, and the markdown
       format is |video|(http://path/to/video). It will use mdx_video.py
       to handle embedding the video from a variety of sources."""
    new_body = re.sub(r'\|video\|\((.*?)\)', replace_tag, value)

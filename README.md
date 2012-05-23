@@ -17,17 +17,19 @@ which when rendered with...
 ```html
 {% load markdown_video %}
 
-{{ post.body|video|markdown }}
+{{ post.body|markdown:"safe"|video|safe }}
 ```
 
 would produce...
 
 ```html
-Need to update, personal project is currently broken.
+<object data="http://www.youtube.com/v/fFO-Y7NfqMg&amp;amp" height="344" type="application/x-shockwave-flash" width="425">
+   <param name="movie" value="http://www.youtube.com/v/fFO-Y7NfqMg&amp;amp"></param>
+   <param name="allowFullScreen" value="true"></param>
+</object>
 ```
 
-All you actually need for this to work is mdx-video.py somewhere in your python path. If you have that it will
-enable funcionality such as (copied from original):
+All you actually need for this to work is mdx-video.py somewhere in your python path (such as you webapp root, where your settings.py file is). If you have that it will enable funcionality such as (copied from original):
 
 The following code...
 
