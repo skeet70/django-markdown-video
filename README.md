@@ -6,8 +6,13 @@ Hoping to establish a github presence for this great little python-markdown exte
 Examples
 ---------
 
-A simple markdown templatetag for django users has been added. This enables embedding of video using markdown like so, 
-**|video|(http://www.youtube.com/watch?v=fFO-Y7NfqMg&feature=g-all-u)** which when rendered with...
+A simple markdown templatetag for django users has been added. This enables embedding of video using markdown like so,
+
+```
+**|video|(http://www.youtube.com/watch?v=fFO-Y7NfqMg&feature=g-all-u)** 
+```
+
+which when rendered with...
 
 ```html
 {% load markdown_video %}
