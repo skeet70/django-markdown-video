@@ -1,0 +1,9 @@
+<html>
+    <head>
+    <title>Markdown Preview</title>
+    </head>
+    <body>
+    {% load markup markdown_video %}
+    {{ preview|video|safe|markdown:"safe" }}
+    </body>
+</html>
