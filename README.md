@@ -58,6 +58,7 @@ markdown.markdown(url, ['video(youtube_width=853,youtube_height=505)'])
 
 This extension supports the following services:
 
+```
 Blip.tv
 Dailymotion
 Gametrailers
@@ -66,5 +67,6 @@ Veoh
 Vimeo
 Yahoo! video
 Youtube
+```
 
 > NOTE: Blip.tv works a little differently than the others because there is no way to construct a working object with the player URL. Instead of the URL to the Blip.tv page, you will use the URL to the flv file, like http://blip.tv/file/get/Pycon-DjangoOnJython531.flv for example. This is located in Files and Links section of Blip.tv.
