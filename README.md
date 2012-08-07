@@ -1,7 +1,9 @@
 Django Markdown Video
 =====================
 
-Hoping to establish a github presence for this great little python-markdown extension by Tyler Lesmann(http://code.google.com/p/python-markdown-video/), to keep it modern. It's incorporated into a little django templatetag for ease of use, as well as giving some markItUp examples.
+Python-markdown-video allows for embedding video in markdown formatted text.
+Original python-markdown extension by Tyler Lesmann(http://code.google.com/p/python-markdown-video/)
+This app incorporates the extension into a django filter for ease of use, as well as giving some markItUp examples.
 
 Examples
 ---------
@@ -29,7 +31,7 @@ would produce...
 </object>
 ```
 
-All you actually need for this to work is mdx-video.py somewhere in your python path (such as you webapp root, where your settings.py file is). If you have that it will enable funcionality such as (copied from original):
+All you actually need for the base functionality to work (not the templatetags) is mdx-video.py somewhere in your python path (such as you webapp root, where your settings.py file is). If you have that it will enable funcionality such as (copied from original):
 
 The following code...
 
